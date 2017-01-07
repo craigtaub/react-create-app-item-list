@@ -16,7 +16,7 @@ class App extends Component {
     return `joke ${Math.random()}`;
   }
 
-  onClickHandler = () => {
+  onClickHandler() { // first-class object so can be a param. 
       jokeList.push(this.getJoke());
       this.setState({
         jokeList
